@@ -12,15 +12,24 @@
 <Pagebase>
 </Pagebase>
 
-<Navbar>
-</Navbar>
 
-<Pagetop>
-</Pagetop>
+
+
+
+
 
 <div class={`absolute`}>
 <slot>
 </slot>
 </div>
+
+<Navbar>
+</Navbar>
+
+
+<Pagetop>
+</Pagetop>
+
+
 
 

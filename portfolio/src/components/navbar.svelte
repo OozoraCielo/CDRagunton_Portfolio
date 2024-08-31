@@ -3,75 +3,90 @@
     // $:currentRoute = $page.url.pathname;
 
 
-    function scrollIntoView({ target }) {
-      const el = document.querySelector(target.getAttribute('href'));
-      if (!el) return;
-      el.scrollIntoView({
-        behavior: 'smooth'
-      });
-    }
+     import { scrollTo, scrollRef, scrollTop } from 'svelte-scrolling'
 
 
   
-      
+//get screen size
+$: innerWidth = 1000;
+$: innerHeight = 1000;
+
+
 </script>
+
+<svelte:window bind:innerWidth bind:innerHeight />
+
 
 <!--black behind navbar-->
 <div class={`pointer-events-none`}>
-<div class=" min-w-full min-h-full fixed z-10 flex opacity-70">
-    <img src="/top.png" alt="a" class="ml-auto w-[900px] h-[175px]">
+<div class=" min-w-full min-h-full fixed flex opacity-80 select-none touch-none">
+    <img src="/top.png" alt="a" class={`ml-auto  ${innerWidth > 700 ? 'w-[700px] h-[175px]' : 'w-[500px] h-[85px]'}`}>
 </div>
 </div>
   
-<nav class="w-full h-32 z-10 fixed flex justify-end pt-8 text-3xl pr-24 font-odibee">
+<nav class={`w-full h-32 z-10 fixed flex justify-end  text-2xl pointer-events-none  font-odibee ${innerWidth > 700 ? 'pr-20 pt-8' : 'pt-2 pr-8'}`}>
   
           <!--Home-->
-          <li class="flex justify-center" >
-
+          <!-- ${innerWidth > 700 ? 'flex-row' : 'flex-col'} -->
+          <li class={`flex justify-center`} >
+        
           <!--<a href="/">-->
-          <a href="#home" on:click|preventDefault={scrollIntoView}>
-          <div class={"px-4 bg-black bg-opacity-0 hover:bg-opacity-100 h-14 rounded-2xl"}>
-          <p class={`text-white py-3`}>Home</p>
+          
+          <div class={`bg-black bg-opacity-0 hover:bg-opacity-100  rounded-2xl pointer-events-auto ${innerWidth > 700 ? 'px-3 h-14' : 'px-2 text-xl h-10'}`}>
+            <a href use:scrollTo={'home'} >
+          <p class={`text-white  ${innerWidth > 700 ? 'py-3' : 'py-1'}`}>Home</p>
+        </a>
           </div>
-          </a>
+
+
+
+          <div class={`bg-black bg-opacity-0 hover:bg-opacity-100  rounded-2xl pointer-events-auto ${innerWidth > 700 ? 'px-3 h-14' : 'px-2 text-xl h-10'}`}>
+            <a href use:scrollTo={{ ref: 'skills', offset: -200 }}>
+      <p class={`text-white  ${innerWidth > 700 ? 'py-3' : 'py-1'}`}>Skills</p>
+    </a>
+      </div>
   
   
-          <a href="#work" on:click|preventDefault={scrollIntoView}>
-          <div class={"px-4 bg-black bg-opacity-0 hover:bg-opacity-100 h-14 rounded-2xl"}>
-          <p class={`text-white py-3`}>Work</p>
+          
+            <div class={`bg-black bg-opacity-0 hover:bg-opacity-100  rounded-2xl pointer-events-auto ${innerWidth > 700 ? 'px-3 h-14' : 'px-2 text-xl h-10'}`}>
+                <a href use:scrollTo={{ ref: 'work', offset: -200 }}>
+          <p class={`text-white  ${innerWidth > 700 ? 'py-3' : 'py-1'}`}>Work</p>
+        </a>
           </div>
-          </a>
             
   
   
-          <a href="#education" on:click|preventDefault={scrollIntoView}>
-          <div class={"px-4 bg-black bg-opacity-0 hover:bg-opacity-100 h-14 rounded-2xl"}>
-          <p class={`text-white py-3`}>Education</p>
+          
+            
+  
+  
+  
+          
+            <div class={`bg-black bg-opacity-0 hover:bg-opacity-100  rounded-2xl pointer-events-auto ${innerWidth > 700 ? 'px-3 h-14' : 'px-2 text-xl h-10'}`}>
+                <a href use:scrollTo={{ ref: 'publication', offset: -200 }}>
+          <p class={`text-white  ${innerWidth > 700 ? 'py-3' : 'py-1'}`}>Publication</p>
+        </a>
           </div>
-          </a>
-  
-  
-  
-          <a href="#publication" on:click|preventDefault={scrollIntoView}>
-          <div class={"px-4 bg-black bg-opacity-0 hover:bg-opacity-100 h-14 rounded-2xl"}>
-          <p class={`text-white py-3`}>Publication</p>
-          </div>
-          </a>
+
+
+
+          <div class={`bg-black bg-opacity-0 hover:bg-opacity-100  rounded-2xl pointer-events-auto ${innerWidth > 700 ? 'px-3 h-14' : 'px-2 text-xl h-10'}`}>
+            <a href use:scrollTo={{ ref: 'education', offset: -100 }}>
+      <p class={`text-white  ${innerWidth > 700 ? 'py-3' : 'py-1'}`}>Education</p>
+    </a>
+      </div>
+          
           
   
   
-          <a href="projects" on:click|preventDefault={scrollIntoView}>
-          <div class={"px-4 bg-black bg-opacity-0 hover:bg-opacity-100 h-14 rounded-2xl"}>
-          <p class={`text-white py-3`}>Projects</p>
+          
+            <div class={`bg-black bg-opacity-0 hover:bg-opacity-100  rounded-2xl pointer-events-auto ${innerWidth > 700 ? 'px-3 h-14' : 'px-2 text-xl h-10'}`}>
+                <a href use:scrollTo={{ ref: 'projects', offset: -200 }}>
+          <p class={`text-white  ${innerWidth > 700 ? 'py-3' : 'py-1'}`}>Projects</p>
+        </a>
           </div>
-          </a>
   
   
-          <a href="#skills" on:click|preventDefault={scrollIntoView}>
-          <div class={"px-4 bg-black bg-opacity-0 hover:bg-opacity-100 h-14 rounded-2xl"}>
-          <p class={`text-white py-3`}>Skills</p>
-          </div>
-          </a>
         </li>
 
 </nav>
