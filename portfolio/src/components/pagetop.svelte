@@ -49,10 +49,10 @@ function doMail() {
 <!--links-->
 <div class={`min-w-full min-h-full flex flex-col fixed justify-end pointer-events-none `}>
     <div class="ml-auto" >
-        <a href="mailto:raguntoncarl@gmail.com" class={`pointer-events-auto`}>
+        <button on:click={doMail} class={`pointer-events-auto`}>
             <img src="mail.png" alt="a" class=" w-10 transform transition duration-300 hover:scale-125  m-3">
     
-        </a>
+        </button>
         </div>
 
 
