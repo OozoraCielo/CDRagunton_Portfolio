@@ -43,47 +43,47 @@ $: innerHeight = 1000;
 		<div class={`flex flex-row flex-wrap pl-[3%] pr-[15%] mx-auto w-[75%]`}>
 
 			<div class={`flex flex-col mx-auto`}>
-			<img src="/skills/python_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
+			<img src="skills/python_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
 			<h2 class={`text-2xl text-gray-200 font-odibee mx-auto mt-auto`}>Python</h2>
 			</div>
 
 			<div class={`flex flex-col mx-auto`}>
-			<img src="/skills/c_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
+			<img src="skills/c_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
 			<h2 class={`text-2xl text-gray-200 font-odibee mx-auto mt-auto`}>C</h2>
 			</div>
 
 			<div class={`flex flex-col mx-auto`}>
-			<img src="/skills/csharp_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
+			<img src="skills/csharp_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
 			<h2 class={`text-2xl text-gray-200 font-odibee mx-auto mt-auto`}>C#</h2>
 			</div>
 
 			<div class={`flex flex-col mx-auto`}>
-				<img src="/skills/typescript_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
+				<img src="skills/typescript_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
 				<h2 class={`text-2xl text-gray-200 font-odibee mx-auto mt-auto`}>Typescript</h2>
 				</div>
 
 			<div class={`flex flex-col mx-auto`}>
-			<img src="/skills/html_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
+			<img src="skills/html_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
 			<h2 class={`text-2xl text-gray-200 font-odibee mx-auto mt-auto`}>HTML</h2>
 			</div>
 
 			<div class={`flex flex-col mx-auto`}>
-			<img src="/skills/css_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
+			<img src="skills/css_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
 			<h2 class={`text-2xl text-gray-200 font-odibee mx-auto mt-auto`}>CSS</h2>
 			</div>
 
 			<div class={`flex flex-col mx-auto`}>
-				<img src="/skills/javascript_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
+				<img src="skills/javascript_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
 				<h2 class={`text-2xl text-gray-200 font-odibee mx-auto mt-auto`}>Javascript</h2>
 				</div>
 			
 				<div class={`flex flex-col mx-auto`}>
-					<img src="/skills/linux_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
+					<img src="skills/linux_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
 					<h2 class={`text-2xl text-gray-200 font-odibee mx-auto mt-auto`}>Linux</h2>
 					</div>
 
 					<div class={`flex flex-col mx-auto`}>
-						<img src="/skills/figma_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
+						<img src="skills/figma_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
 						<h2 class={`text-2xl text-gray-200 font-odibee mx-auto mt-auto`}>Figma</h2>
 						</div>
 
@@ -92,52 +92,52 @@ $: innerHeight = 1000;
 		
 
 			<div class={`flex flex-col mx-auto`}>
-			<img src="/skills/svelte_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
+			<img src="skills/svelte_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
 			<h2 class={`text-2xl text-gray-200 font-odibee mx-auto mt-auto`}>Svelte</h2>
 			</div>
 
 			<div class={`flex flex-col mx-auto`}>
-			<img src="/skills/tailwind_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
+			<img src="skills/tailwind_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
 			<h2 class={`text-2xl text-gray-200 font-odibee mx-auto mt-auto`}>Tailwind</h2>
 			</div>
 
 			<div class={`flex flex-col mx-auto`}>
-			<img src="/skills/matlab_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
+			<img src="skills/matlab_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
 			<h2 class={`text-2xl text-gray-200 font-odibee mx-auto mt-auto`}>Matlab</h2>
 			</div>
 
 			<div class={`flex flex-col mx-auto`}>
-				<img src="/skills/flutter_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
+				<img src="skills/flutter_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
 				<h2 class={`text-2xl text-gray-200 font-odibee mx-auto mt-auto`}>Flutter</h2>
 				</div>
 
 				<div class={`flex flex-col mx-auto`}>
-					<img src="/skills/firebase_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
+					<img src="skills/firebase_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
 					<h2 class={`text-2xl text-gray-200 font-odibee mx-auto mt-auto`}>Firebase</h2>
 					</div>
 
 			<div class={`flex flex-col mx-auto`}>
-			<img src="/skills/postgresql_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
+			<img src="skills/postgresql_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
 			<h2 class={`text-2xl text-gray-200 font-odibee mx-auto mt-auto`}>PostgreSQL</h2>
 			</div>
 
 			<div class={`flex flex-col mx-auto`}>
-			<img src="/skills/godot_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
+			<img src="skills/godot_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
 			<h2 class={`text-2xl text-gray-200 font-odibee mx-auto mt-auto`}>Godot</h2>
 			</div>
 
 			<div class={`flex flex-col mx-auto`}>
-				<img src="/skills/unity_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
+				<img src="skills/unity_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
 				<h2 class={`text-2xl text-gray-200 font-odibee mx-auto mt-auto`}>Unity</h2>
 				</div>
 			
 			<div class={`flex flex-col mx-auto`}>
-				<img src="/skills/github_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
+				<img src="skills/github_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
 				<h2 class={`text-2xl text-gray-200 font-odibee mx-auto mt-auto`}>Github</h2>
 				</div>
 
 				<div class={`flex flex-col mx-auto`}>
-					<img src="/skills/git_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
+					<img src="skills/git_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
 					<h2 class={`text-2xl text-gray-200 font-odibee mx-auto mt-auto`}>Git</h2>
 					</div>
 
@@ -146,7 +146,7 @@ $: innerHeight = 1000;
 		</div>
 		<div class="pt-16"></div>
 			<!-- <div class={`mr-[15%]  `}>
-				<img src="/skills/top.png" alt="a" class={`   w-[60%]  mx-auto pointer-events-none`}>
+				<img src="skills/top.png" alt="a" class={`   w-[60%]  mx-auto pointer-events-none`}>
 				<div class={`bg-gray-900 w-[60%] h-64 mx-auto`}>
 
 					<h2 class={` text-5xl text-gray-200 font-odibee flex justify-center pt-6`}>
@@ -154,7 +154,7 @@ $: innerHeight = 1000;
 					</h2>
 
 				</div>
-				<img src="/skills/bottom.png" alt="a" class={`   w-[60%]  mx-auto pointer-events-none`}>
+				<img src="skills/bottom.png" alt="a" class={`   w-[60%]  mx-auto pointer-events-none`}>
 			</div> -->
 
 
@@ -164,8 +164,8 @@ $: innerHeight = 1000;
 			
 
 			<!-- <div class={` min-w-full mx-auto`}>
-				<img src="/skills/top2.png" alt="a" class={` drop-shadow-xl mt-10 w-[40%]  absolute  mx-auto`}>
-			<img src="/skills/top1.png" alt="a" class={` drop-shadow-xl mt-10 w-[40%]  absolute  mx-auto`}>
+				<img src="skills/top2.png" alt="a" class={` drop-shadow-xl mt-10 w-[40%]  absolute  mx-auto`}>
+			<img src="skills/top1.png" alt="a" class={` drop-shadow-xl mt-10 w-[40%]  absolute  mx-auto`}>
 			
 			<div class={`bg-black w-[40%] mt-[370px]  absolute mx-auto`}>
 				<h2 class={` text-5xl text-gray-200 font-odibee flex justify-center p-4`}>
@@ -183,7 +183,7 @@ $: innerHeight = 1000;
 	
 	
 		<div class={``}>
-			<img src="/area_top.png" alt="a" class="w-screen pointer-events-none select-none touch-none">
+			<img src="area_top.png" alt="a" class="w-screen pointer-events-none select-none touch-none">
 			<section use:scrollRef={'work'} class="">
 			<div class={`bg-light_blue_area w-screen pt-16`}>
 				
@@ -196,8 +196,8 @@ $: innerHeight = 1000;
 				<div class="pl-[3%] mr-[15%]">
 					<div class={`${innerWidth > 700 ? 'flex flex-row' : 'flex flex-col'}` }>
 						<div class={`${innerWidth > 700 ? 'flex flex-col min-w-32' : 'flex flex-row min-w-32 mx-auto'}` }>
-					<img src="/itslab.png" alt="a" class={`w-24 h-24 rounded-xl drop-shadow-xl ${innerWidth > 700 ? 'mt-10' : 'mt-10'}`}>
-					<img src="/ncts.png" alt="a" class={`w-24 h-24 rounded-xl drop-shadow-xl ${innerWidth > 700 ? 'mt-5' : ' mt-10 ml-5'}`}>
+					<img src="itslab.png" alt="a" class={`w-24 h-24 rounded-xl drop-shadow-xl ${innerWidth > 700 ? 'mt-10' : 'mt-10'}`}>
+					<img src="ncts.png" alt="a" class={`w-24 h-24 rounded-xl drop-shadow-xl ${innerWidth > 700 ? 'mt-5' : ' mt-10 ml-5'}`}>
 					</div>
 				<div>
 
@@ -227,7 +227,7 @@ $: innerHeight = 1000;
 				
 			</div>
 		</section>
-			<img src="/area_bottom.png" alt="a" class="w-screen pointer-events-none select-none touch-none">
+			<img src="area_bottom.png" alt="a" class="w-screen pointer-events-none select-none touch-none">
 
 		</div>
 	
@@ -241,7 +241,7 @@ $: innerHeight = 1000;
 		<div class="pl-[3%] mr-[15%]">
 			<div class={`${innerWidth > 700 ? 'flex flex-row' : 'flex flex-col'}` }>
 				<div class={`flex flex-col min-w-32  ${innerWidth > 700 ? '' : 'mx-auto'}` }>
-			<img src="/jeeps.png" alt="a" class="mt-10 w-32 rounded-xl drop-shadow-xl">
+			<img src="jeeps.png" alt="a" class="mt-10 w-32 rounded-xl drop-shadow-xl">
 			</div>
 		<div>
 
@@ -272,7 +272,7 @@ $: innerHeight = 1000;
 
    
 		<div class={``}>
-			<img src="/area_top.png" alt="a" class="w-screen pointer-events-none select-none touch-none">
+			<img src="area_top.png" alt="a" class="w-screen pointer-events-none select-none touch-none">
 			<section use:scrollRef={'education'}>
 			<div class={`bg-light_blue_area w-screen pt-16`}>
 				<h2 class={`pl-[3%] text-5xl text-black font-odibee flex justify-center mr-[15%] text-center`}>
@@ -283,7 +283,7 @@ $: innerHeight = 1000;
 		<div class="pl-[3%] mr-[15%]">
 			<div class={`${innerWidth > 700 ? 'flex flex-row' : 'flex flex-col'}` }>
 				<div class={`flex flex-col min-w-32  ${innerWidth > 700 ? '' : 'mx-auto'}` }>
-				<img src="/upd.png" alt="a" class="mt-10 w-32 h-32 rounded-xl drop-shadow-xl">
+				<img src="upd.png" alt="a" class="mt-10 w-32 h-32 rounded-xl drop-shadow-xl">
 				</div>
 			<div>
 
@@ -313,7 +313,7 @@ $: innerHeight = 1000;
 		<div class="pl-[3%] mr-[15%]">
 			<div class={`${innerWidth > 700 ? 'flex flex-row' : 'flex flex-col'}` }>
 				<div class={`flex flex-col min-w-32  ${innerWidth > 700 ? '' : 'mx-auto'}` }>
-				<img src="/sha.png" alt="a" class="mt-10 w-32 h-32 rounded-xl drop-shadow-xl">
+				<img src="sha.png" alt="a" class="mt-10 w-32 h-32 rounded-xl drop-shadow-xl">
 				</div>
 			<div>
 
@@ -343,7 +343,7 @@ $: innerHeight = 1000;
 			
 		</section>
 		
-			<img src="/area_bottom.png" alt="a" class="w-screen pointer-events-none select-none touch-none">
+			<img src="area_bottom.png" alt="a" class="w-screen pointer-events-none select-none touch-none">
 		</div>
 	
 
@@ -361,7 +361,7 @@ $: innerHeight = 1000;
 		<div class="ml-[5%] mr-[15%] bg-gray-900 mt-10 rounded-2xl  border border-light_blue_area">
 			<div class={`${innerWidth > 700 ? 'flex flex-row' : 'flex flex-col'}` }>
 				<div class={`flex flex-col min-w-32  ${innerWidth > 700 ? '' : 'mx-auto'}` }>
-			<img src="/JeePS2.png" alt="a" class="ml-5 mt-10 w-32 rounded-xl drop-shadow-xl">
+			<img src="JeePS2.png" alt="a" class="ml-5 mt-10 w-32 rounded-xl drop-shadow-xl">
 			</div>
 		<div>
 
@@ -383,9 +383,9 @@ $: innerHeight = 1000;
 		</div>
 		</div>
 		<div class={`flex flex_row `}>
-			<img src="/JeePS_jeep_selected.png" alt="a" class="mt-10 w-[40%] rounded-xl drop-shadow-xl mx-auto">
-			<img src="/JeePS_driver_app.png" alt="a" class=" mt-10 w-[10%] rounded-xl drop-shadow-xl mx-auto">
-			<img src="/JeePS_feedback.png" alt="a" class="mt-10 w-[40%] rounded-xl drop-shadow-xl mx-auto">
+			<img src="JeePS_jeep_selected.png" alt="a" class="mt-10 w-[40%] rounded-xl drop-shadow-xl mx-auto">
+			<img src="JeePS_driver_app.png" alt="a" class=" mt-10 w-[10%] rounded-xl drop-shadow-xl mx-auto">
+			<img src="JeePS_feedback.png" alt="a" class="mt-10 w-[40%] rounded-xl drop-shadow-xl mx-auto">
 		</div>
 
 		
@@ -403,7 +403,7 @@ $: innerHeight = 1000;
 			<div class="ml-[5%] mr-[15%] bg-gray-900 mt-10 rounded-2xl  border border-light_blue_area">
 			<div class={`${innerWidth > 700 ? 'flex flex-row' : 'flex flex-col'}` }>
 				<div class={`flex flex-col min-w-32  ${innerWidth > 700 ? '' : 'mx-auto'}` }>
-			<img src="/meralcost.png" alt="a" class="ml-5 mt-10 w-32 rounded-xl drop-shadow-xl">
+			<img src="meralcost.png" alt="a" class="ml-5 mt-10 w-32 rounded-xl drop-shadow-xl">
 			</div>
 		<div>
 
@@ -424,8 +424,8 @@ $: innerHeight = 1000;
 		</div>
 		</div>
 		<div class={`flex flex_row `}>
-			<img src="/meralcost_homepage.png" alt="a" class="mt-10 w-[40%] rounded-xl drop-shadow-xl mx-auto">
-			<img src="/meralcost_plot1.png" alt="a" class="ml-10 mt-10 w-[35%] rounded-xl drop-shadow-xl mx-auto">
+			<img src="meralcost_homepage.png" alt="a" class="mt-10 w-[40%] rounded-xl drop-shadow-xl mx-auto">
+			<img src="meralcost_plot1.png" alt="a" class="ml-10 mt-10 w-[35%] rounded-xl drop-shadow-xl mx-auto">
 		</div>
 		
 		<div class="pt-10"></div>
@@ -442,7 +442,7 @@ $: innerHeight = 1000;
 			<div class="ml-[5%] mr-[15%] bg-gray-900 mt-10 rounded-2xl  border border-light_blue_area">
 			<div class={`${innerWidth > 700 ? 'flex flex-row' : 'flex flex-col'}` }>
 				<div class={`flex flex-col min-w-32  ${innerWidth > 700 ? '' : 'mx-auto'}` }>
-			<img src="/alco_ol.png" alt="a" class="ml-5 mt-10 w-32 rounded-xl drop-shadow-xl">
+			<img src="alco_ol.png" alt="a" class="ml-5 mt-10 w-32 rounded-xl drop-shadow-xl">
 			</div>
 		<div>
 
@@ -466,8 +466,8 @@ $: innerHeight = 1000;
 		
 		</div>
 		<div class={`flex flex_row `}>
-			<img src="/alco_ol_homepage .png" alt="a" class="mt-10 w-[40%] rounded-xl drop-shadow-xl mx-auto">
-			<img src="/alco_ol_map.png" alt="a" class="ml-10 mt-10 w-[40%] rounded-xl drop-shadow-xl mx-auto">
+			<img src="alco_ol_homepage .png" alt="a" class="mt-10 w-[40%] rounded-xl drop-shadow-xl mx-auto">
+			<img src="alco_ol_map.png" alt="a" class="ml-10 mt-10 w-[40%] rounded-xl drop-shadow-xl mx-auto">
 			</div>
 		<div class="pt-10"></div>
 		
@@ -499,8 +499,8 @@ $: innerHeight = 1000;
 		</div>
 		
 		<div class={`flex flex_row `}>
-			<img src="/ai_1.png" alt="a" class="mt-10 w-[40%] rounded-xl drop-shadow-xl mx-auto">
-			<img src="/ai_2.png" alt="a" class="ml-10 mt-10 w-[40%] rounded-xl drop-shadow-xl mx-auto">
+			<img src="ai_1.png" alt="a" class="mt-10 w-[40%] rounded-xl drop-shadow-xl mx-auto">
+			<img src="ai_2.png" alt="a" class="ml-10 mt-10 w-[40%] rounded-xl drop-shadow-xl mx-auto">
 		</div>
 		
 		<div class="pt-10"></div>
@@ -515,7 +515,7 @@ $: innerHeight = 1000;
 		<div class="ml-[5%] mr-[15%] bg-gray-900 mt-10 rounded-2xl  border border-light_blue_area">
 			<div class={`${innerWidth > 700 ? 'flex flex-row' : 'flex flex-col'}` }>
 				<div class={`flex flex-col min-w-32  ${innerWidth > 700 ? '' : 'mx-auto'}` }>
-			<img src="/JeePS_old.png" alt="a" class="ml-5 mt-10 w-32 rounded-xl drop-shadow-xl">
+			<img src="JeePS_old.png" alt="a" class="ml-5 mt-10 w-32 rounded-xl drop-shadow-xl">
 			</div>
 		<div>
 
@@ -539,8 +539,8 @@ $: innerHeight = 1000;
 		
 		</div>
 		<div class={`flex flex_row `}>
-			<img src="/JeePS_old_homepage.png" alt="a" class="mt-10 w-[40%] rounded-xl drop-shadow-xl mx-auto">
-			<img src="/JeePS_old_login.png" alt="a" class="ml-10 mt-10 w-[40%] rounded-xl drop-shadow-xl mx-auto">
+			<img src="JeePS_old_homepage.png" alt="a" class="mt-10 w-[40%] rounded-xl drop-shadow-xl mx-auto">
+			<img src="JeePS_old_login.png" alt="a" class="ml-10 mt-10 w-[40%] rounded-xl drop-shadow-xl mx-auto">
 			</div>
 		<div class="pt-10"></div>
 		
@@ -555,7 +555,7 @@ $: innerHeight = 1000;
 
 	<div class={`pl-[3%]  flex flex-col mr-[15%]`}>
 		
-	<img src="/barong grad pic.png" alt="a" class="w-[18%] mx-auto">
+	<img src="barong grad pic.png" alt="a" class="w-[18%] mx-auto">
 	<h2 class={` text-xl text-gray-200  font-electrolize text-center`}>
 		Carl David Ragunton<br>
 		raguntoncarl@gmail.com

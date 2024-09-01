@@ -20,7 +20,7 @@ $: innerHeight = 1000;
 <!--black behind navbar-->
 <div class={`pointer-events-none`}>
 <div class=" min-w-full min-h-full fixed flex opacity-80 select-none touch-none">
-    <img src="/top.png" alt="a" class={`ml-auto  ${innerWidth > 700 ? 'w-[700px] h-[175px]' : 'w-[500px] h-[85px]'}`}>
+    <img src="top.png" alt="a" class={`ml-auto  ${innerWidth > 700 ? 'w-[700px] h-[175px]' : 'w-[500px] h-[85px]'}`}>
 </div>
 </div>
   
