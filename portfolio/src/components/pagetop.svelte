@@ -29,7 +29,7 @@ function doMail() {
     </div>
 
     <div class="min-h-full min-w-full fixed flex justify-end">
-        <img src="/right.png" alt="a" class="w-[20%] min-h-[50%] -mt-44">
+        <img src="/right.png" alt="a" class="w-[15%] min-h-[50%] -mt-44">
     </div>
 
 

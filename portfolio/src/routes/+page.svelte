@@ -40,7 +40,7 @@ $: innerHeight = 1000;
 		<h2 class={`pl-[3%] text-5xl text-gray-200 font-odibee flex justify-center mr-[15%] text-center`}>
 			Skills
 		</h2>
-		<div class={`flex flex-row flex-wrap pl-[3%] pr-[15%] mx-auto w-[70%]`}>
+		<div class={`flex flex-row flex-wrap pl-[3%] pr-[15%] mx-auto w-[75%]`}>
 
 			<div class={`flex flex-col mx-auto`}>
 			<img src="/skills/python_logo.png" alt="a" class={` drop-shadow-xl mt-10 w-12 mx-6 my-auto`}>
@@ -201,17 +201,17 @@ $: innerHeight = 1000;
 					</div>
 				<div>
 
-				<h2 class={`pt-10 pl-10 text-3xl text-black font-electrolize my-auto `}>
+				<h2 class={`pt-10 px-10 text-3xl text-black font-electrolize my-auto `}>
 					UP National Center for Transportation Studies: Intelligent Transportations Systems Laboratory
 				</h2>
 				
-				<h2 class={`pt-2 pl-10 text-xl text-black font-electrolize`}>
+				<h2 class={`pt-2 px-10 text-xl text-black font-electrolize`}>
 					July 2023 – August 2023 <br>
 					Quezon City, NCR
 				</h2>
 
 				<div class="mt-2 ml-10 w-full  mr-[20%] border-dashed border-blue_bg border"></div>
-				<h2 class={`pt-2 pl-10 text-xl text-black font-normal`}>
+				<h2 class={`pt-2 px-10 text-xl text-black font-normal`}>
 					Worked as an intern and developed the frontend of CREATE: CIVIR, a project that replicates a real-life car-related accident, using Unity.
 				</h2>
 				
@@ -245,17 +245,17 @@ $: innerHeight = 1000;
 			</div>
 		<div>
 
-		<h2 class={`pt-10 pl-10 text-4xl text-gray-200  font-electrolize my-auto `}>
+		<h2 class={`pt-10 px-10 text-4xl text-gray-200  font-electrolize my-auto `}>
 			JeePS: Designing a Realtime Public Transportation Tracking System
 		</h2>
 		
-		<h2 class={`pt-2 pl-10 text-xl text-gray-200  font-electrolize`}>
+		<h2 class={`pt-2 px-10 text-xl text-gray-200  font-electrolize`}>
 			NIDS 2024 <br>
 			Carl Ragunton, Zedec Pacaldo, and Jozelle Adawe
 		</h2>
 
 		<div class="mt-2 ml-10 w-full  mr-[20%] border-dashed border-light_blue_area border"></div>
-		<h2 class={`pt-2 pl-10 text-xl text-gray-200  font-normal`}>
+		<h2 class={`pt-2 px-10 text-xl text-gray-200  font-normal`}>
 			Published a paper about creating a web application and mobile application that improves the overall situation of public informal transportation in the Philippines. The system addresses problems of passengers regarding safety, driver’s behavior, information materials and service adequacy by providing several information using Flutter and Firebase.
 		</h2>
 		
@@ -287,16 +287,16 @@ $: innerHeight = 1000;
 				</div>
 			<div>
 
-			<h2 class={`pt-10 pl-10 text-4xl text-black font-electrolize my-auto `}>
+			<h2 class={`pt-10 px-10 text-4xl text-black font-electrolize my-auto `}>
 				University of the Philippines Diliman
 			</h2>
 			
-			<h2 class={`pt-2 pl-10 text-xl text-black font-electrolize`}>
+			<h2 class={`pt-2 px-10 text-xl text-black font-electrolize`}>
 				September 2020 – July 2024 <br>
 				Quezon City, NCR
 			</h2>
 			<div class="mt-2 ml-10 w-full  mr-[20%] border-dashed border-blue_bg border"></div>
-			<h2 class={`pt-2 pl-10 text-xl text-black font-normal`}>
+			<h2 class={`pt-2 px-10 text-xl text-black font-normal`}>
 				Bachelor of Computer Science <br>
 				Magna Cum Laude
 			</h2>
@@ -317,16 +317,16 @@ $: innerHeight = 1000;
 				</div>
 			<div>
 
-			<h2 class={`pt-10 pl-10 text-4xl text-black font-electrolize my-auto `}>
+			<h2 class={`pt-10 px-10 text-4xl text-black font-electrolize my-auto `}>
 				Sacred Heart Academy of Sta. Maria (Bulacan) Inc.
 			</h2>
 			
-			<h2 class={`pt-2 pl-10 text-xl text-black font-electrolize`}>
+			<h2 class={`pt-2 px-10 text-xl text-black font-electrolize`}>
 				June 2014 – April 2020 <br>
 				Santa Maria, Bulacan
 			</h2>
 			<div class="mt-2 ml-10 w-full  mr-[20%] border-dashed border-blue_bg border"></div>
-			<h2 class={`pt-2 pl-10 text-xl text-black font-normal`}>
+			<h2 class={`pt-2 px-10 text-xl text-black font-normal`}>
 				STEM Strand <br>
 				Highest Honor
 			</h2>
@@ -365,16 +365,16 @@ $: innerHeight = 1000;
 			</div>
 		<div>
 
-		<h2 class={`pt-10 pl-10 text-4xl text-gray-200  font-electrolize my-auto `}>
+		<h2 class={`pt-10 px-10 text-4xl text-gray-200  font-electrolize my-auto `}>
 			JeePS: Realtime Public Transportation Tracking System
 		</h2>
-		<h2 class={`pt-2 pl-10 text-xl text-gray-200 font-electrolize`}>
+		<h2 class={`pt-2 px-10 text-xl text-gray-200 font-electrolize`}>
 			September 2023 - June 2024
 		</h2>
 		
 
-		<div class="mt-2 ml-10 mr-4  border-dashed border-light_blue_area border "></div>
-		<h2 class={`pt-2 pl-10 text-xl text-gray-200  font-normal`}>
+		<div class="mt-2 mx-10  border-dashed border-light_blue_area border "></div>
+		<h2 class={`pt-2 px-10 text-xl text-gray-200  font-normal`}>
 			Published a paper about creating a web application and mobile application that improves the overall situation of public informal transportation in the Philippines. The system addresses problems of passengers regarding safety, driver’s behavior, information materials and service adequacy by providing several information using Flutter and Firebase.
 		</h2>
 
@@ -387,6 +387,7 @@ $: innerHeight = 1000;
 			<img src="/JeePS_driver_app.png" alt="a" class=" mt-10 w-[10%] rounded-xl drop-shadow-xl mx-auto">
 			<img src="/JeePS_feedback.png" alt="a" class="mt-10 w-[40%] rounded-xl drop-shadow-xl mx-auto">
 		</div>
+
 		
 		<div class="pt-10"></div>
 		
@@ -406,16 +407,16 @@ $: innerHeight = 1000;
 			</div>
 		<div>
 
-		<h2 class={`pt-10 pl-10 text-4xl text-gray-200  font-electrolize my-auto `}>
+		<h2 class={`pt-10 px-10 text-4xl text-gray-200  font-electrolize my-auto `}>
 			MeralCOST: Analysis on Meralco Typical Consumption Price
 		</h2>
-		<h2 class={`pt-2 pl-10 text-xl text-gray-200 font-electrolize`}>
+		<h2 class={`pt-2 px-10 text-xl text-gray-200 font-electrolize`}>
 			March 2024 - June 2024
 		</h2>
 		
 
-		<div class="mt-2 ml-10 mr-4  border-dashed border-light_blue_area border "></div>
-		<h2 class={`pt-2 pl-10 text-xl text-gray-200  font-normal`}>
+		<div class="mt-2 mx-10  border-dashed border-light_blue_area border "></div>
+		<h2 class={`pt-2 px-10 text-xl text-gray-200  font-normal`}>
 			Used Data Science to analyze and interpret data from past electric consumption costs of Meralco to determine how its price has changed over the years and what factors cause the price to fluctuate.		</h2>
 			
 		
@@ -445,17 +446,17 @@ $: innerHeight = 1000;
 			</div>
 		<div>
 
-		<h2 class={`pt-10 pl-10 text-4xl text-gray-200  font-electrolize my-auto `}>	
+		<h2 class={`pt-10 px-10 text-4xl text-gray-200  font-electrolize my-auto `}>	
 			Alco-OL
 		</h2>
-		<h2 class={`pt-2 pl-10 text-xl text-gray-200 font-electrolize`}>
+		<h2 class={`pt-2 px-10 text-xl text-gray-200 font-electrolize`}>
 			May 2023 - June 2023
 		</h2>
 		
 		
 
-		<div class="mt-2 ml-10 mr-4  border-dashed border-light_blue_area border "></div>
-		<h2 class={`pt-2 pl-10 text-xl text-gray-200  font-normal`}>
+		<div class="mt-2 mx-10  border-dashed border-light_blue_area border "></div>
+		<h2 class={`pt-2 px-10 text-xl text-gray-200  font-normal`}>
 			Developed a website that shows current level of content of sanitation dispensers using esp32 as well as their battery status through the internet using Svelte and Firebase		<div class={`flex flex_row `}>
 		
 	</div>
@@ -481,17 +482,17 @@ $: innerHeight = 1000;
 			<div class="ml-[5%] mr-[15%] bg-gray-900 mt-10 rounded-2xl  border border-light_blue_area">
 		<div>
 
-		<h2 class={`pt-10 pl-10 text-4xl text-gray-200  font-electrolize my-auto `}>
+		<h2 class={`pt-10 px-10 text-4xl text-gray-200  font-electrolize my-auto `}>
 			Predicting Highest and lowest Region of game Sales using Decision Tree Classifier and other Models (AI)
 		</h2>
-		<h2 class={`pt-2 pl-10 text-xl text-gray-200 font-electrolize`}>
+		<h2 class={`pt-2 px-10 text-xl text-gray-200 font-electrolize`}>
 			April 2024 - June 2024
 		</h2>
 		
 		
 
-		<div class="mt-2 ml-10 mr-4  border-dashed border-light_blue_area border "></div>
-		<h2 class={`pt-2 pl-10 text-xl text-gray-200  font-normal`}>
+		<div class="mt-2 mx-10  border-dashed border-light_blue_area border "></div>
+		<h2 class={`pt-2 px-10 text-xl text-gray-200  font-normal`}>
 			Used Decision Tree Classifier, Multilayer Perception Classifier, and Hist Gradient Bossting Classifier to predict which region has the highest and lowest scale for a video game.
 		
 
@@ -518,17 +519,17 @@ $: innerHeight = 1000;
 			</div>
 		<div>
 
-		<h2 class={`pt-10 pl-10 text-4xl text-gray-200  font-electrolize my-auto `}>	
+		<h2 class={`pt-10 px-10 text-4xl text-gray-200  font-electrolize my-auto `}>	
 			JeePS (old version)
 		</h2>
-		<h2 class={`pt-2 pl-10 text-xl text-gray-200 font-electrolize`}>
+		<h2 class={`pt-2 px-10 text-xl text-gray-200 font-electrolize`}>
 			September 2022 - June 2023
 		</h2>
 		
 		
 
-		<div class="mt-2 ml-10 mr-4  border-dashed border-light_blue_area border "></div>
-		<h2 class={`pt-2 pl-10 text-xl text-gray-200  font-normal`}>
+		<div class="mt-2 mx-10  border-dashed border-light_blue_area border "></div>
+		<h2 class={`pt-2 px-10 text-xl text-gray-200  font-normal`}>
 			Developed a website that shows current level of content of sanitation dispensers using esp32 as well as their battery status through the internet using Svelte and Firebase		<div class={`flex flex_row `}>
 		
 	</div>
