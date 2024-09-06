@@ -1,93 +1,114 @@
 <script>
-    // import { page } from "$app/stores";
-    // $:currentRoute = $page.url.pathname;
+// import { page } from "$app/stores";
+// $:currentRoute = $page.url.pathname;
 
+// tailwind css
+let menu_div_l = "bg-black bg-opacity-0 hover:bg-opacity-100  rounded-2xl pointer-events-auto px-3 text-2xl h-14"
+let menu_word_l = "text-white py-3"
 
-     import { scrollTo, scrollRef, scrollTop } from 'svelte-scrolling'
+let menu_div_m = "bg-black bg-opacity-0 hover:bg-opacity-100  rounded-2xl pointer-events-auto px-2 text-xl h-10"
+let menu_word_m = "text-white py-1"
 
+let menu_div_s = "bg-black bg-opacity-0 hover:bg-opacity-100  rounded pointer-events-auto px-1 text-base h-8"
+let menu_word_s = "text-white py-1"
 
-  
+import {
+    scrollTo,
+    scrollRef,
+    scrollTop
+} from 'svelte-scrolling'
+
 //get screen size
 $: innerWidth = 1000;
 $: innerHeight = 1000;
 
+let options = [{
+        word: "Home",
+        link: "top"
+    },
+    {
+        word: "Skills",
+        link: "skills"
+    },
+    {
+        word: "Work",
+        link: "work"
+    },
+    {
+        word: "Publication",
+        link: "publication"
+    },
+    {
+        word: "Education",
+        link: "education"
+    },
+    {
+        word: "Projects",
+        link: "projects"
+    },
 
+]
 </script>
 
 <svelte:window bind:innerWidth bind:innerHeight />
 
-
 <!--black behind navbar-->
 <div class={`pointer-events-none`}>
-<div class=" min-w-full min-h-full fixed flex opacity-80 select-none touch-none">
-    <img src="top.png" alt="a" class={`ml-auto  ${innerWidth > 700 ? 'w-[700px] h-[175px]' : 'w-[500px] h-[85px]'}`}>
+    <div class=" min-w-full min-h-full fixed flex opacity-80 select-none touch-none">
+        <img src="top.png" alt="a" class={`ml-auto  ${innerWidth > 700 && innerHeight > 400 && innerHeight > 400 ? 'w-[700px] h-[175px]' : 'w-[350px] h-[90px]'}`}>
+    </div>
 </div>
-</div>
-  
-<nav class={`w-full h-32 z-10 fixed flex justify-end  text-2xl pointer-events-none  font-odibee ${innerWidth > 700 ? 'pr-20 pt-8' : 'pt-2 pr-8'}`}>
-  
-          <!--Home-->
-          <!-- ${innerWidth > 700 ? 'flex-row' : 'flex-col'} -->
-          <li class={`flex justify-center`} >
-        
-          <!--<a href="/">-->
-          
-          <div class={`bg-black bg-opacity-0 hover:bg-opacity-100  rounded-2xl pointer-events-auto ${innerWidth > 700 ? 'px-3 h-14' : 'px-2 text-xl h-10'}`}>
-            <a href use:scrollTo={'home'} >
-          <p class={`text-white  ${innerWidth > 700 ? 'py-3' : 'py-1'}`}>Home</p>
-        </a>
+
+<nav class={`w-full h-32 z-10 fixed flex justify-end pointer-events-none  font-odibee ${innerWidth > 700 && innerHeight > 400 ? 'pr-20 pt-8' : 'pr-5 pt-4'}`}>
+
+    <li class={`flex justify-center`}>
+        {#each options as opt}
+        <div class={`${innerWidth > 700 && innerHeight > 400 ? menu_div_l : menu_div_s}`}>
+            <a href use:scrollTo={{ ref: opt.link, offset: -200 }} >
+                <p class={`${innerWidth > 700 && innerHeight > 400 ? menu_word_l : menu_word_s}`}>{opt.word}</p>
+            </a>
+        </div>
+        {/each}
+    </li>
+
+    <!-- <li class={`flex justify-center`} >
+
+          <div class={`${innerWidth > 700 && innerHeight > 400 ? menu_div_l : menu_div_s}`}>
+            <a href use:scrollTo={{ ref: 'home', offset: -500 }} >
+            <p class={`${innerWidth > 700 && innerHeight > 400 ? menu_word_l : menu_word_s}`}>Home</p>
+            </a>
           </div>
 
-
-
-          <div class={`bg-black bg-opacity-0 hover:bg-opacity-100  rounded-2xl pointer-events-auto ${innerWidth > 700 ? 'px-3 h-14' : 'px-2 text-xl h-10'}`}>
+          <div class={`${innerWidth > 700 && innerHeight > 400 ? menu_div_l : menu_div_s}`}>
             <a href use:scrollTo={{ ref: 'skills', offset: -200 }}>
-      <p class={`text-white  ${innerWidth > 700 ? 'py-3' : 'py-1'}`}>Skills</p>
-    </a>
-      </div>
-  
-  
-          
-            <div class={`bg-black bg-opacity-0 hover:bg-opacity-100  rounded-2xl pointer-events-auto ${innerWidth > 700 ? 'px-3 h-14' : 'px-2 text-xl h-10'}`}>
-                <a href use:scrollTo={{ ref: 'work', offset: -200 }}>
-          <p class={`text-white  ${innerWidth > 700 ? 'py-3' : 'py-1'}`}>Work</p>
-        </a>
-          </div>
-            
-  
-  
-          
-            
-  
-  
-  
-          
-            <div class={`bg-black bg-opacity-0 hover:bg-opacity-100  rounded-2xl pointer-events-auto ${innerWidth > 700 ? 'px-3 h-14' : 'px-2 text-xl h-10'}`}>
-                <a href use:scrollTo={{ ref: 'publication', offset: -200 }}>
-          <p class={`text-white  ${innerWidth > 700 ? 'py-3' : 'py-1'}`}>Publication</p>
-        </a>
+            <p class={`${innerWidth > 700 && innerHeight > 400 ? menu_word_l : menu_word_s}`}>Skills</p>
+            </a>
           </div>
 
+          <div class={`${innerWidth > 700 && innerHeight > 400 ? menu_div_l : menu_div_s}`}>
+            <a href use:scrollTo={{ ref: 'work', offset: -200 }}>
+            <p class={`${innerWidth > 700 && innerHeight > 400 ? menu_word_l : menu_word_s}`}>Work</p>
+            </a>
+          </div>
 
+          <div class={`${innerWidth > 700 && innerHeight > 400 ? menu_div_l : menu_div_s}`}>
+            <a href use:scrollTo={{ ref: 'publication', offset: -200 }}>
+            <p class={`${innerWidth > 700 && innerHeight > 400 ? menu_word_l : menu_word_s}`}>Publication</p>
+            </a>
+          </div>
 
-          <div class={`bg-black bg-opacity-0 hover:bg-opacity-100  rounded-2xl pointer-events-auto ${innerWidth > 700 ? 'px-3 h-14' : 'px-2 text-xl h-10'}`}>
+          <div class={`${innerWidth > 700 && innerHeight > 400 ? menu_div_l : menu_div_s}`}>
             <a href use:scrollTo={{ ref: 'education', offset: -100 }}>
-      <p class={`text-white  ${innerWidth > 700 ? 'py-3' : 'py-1'}`}>Education</p>
-    </a>
-      </div>
-          
-          
-  
-  
-          
-            <div class={`bg-black bg-opacity-0 hover:bg-opacity-100  rounded-2xl pointer-events-auto ${innerWidth > 700 ? 'px-3 h-14' : 'px-2 text-xl h-10'}`}>
-                <a href use:scrollTo={{ ref: 'projects', offset: -200 }}>
-          <p class={`text-white  ${innerWidth > 700 ? 'py-3' : 'py-1'}`}>Projects</p>
-        </a>
+            <p class={`${innerWidth > 700 && innerHeight > 400 ? menu_word_l : menu_word_s}`}>Education</p>
+            </a>
           </div>
-  
-  
-        </li>
+
+          <div class={`${innerWidth > 700 && innerHeight > 400 ? menu_div_l : menu_div_s}`}>
+            <a href use:scrollTo={{ ref: 'projects', offset: -200 }}>
+            <p class={`${innerWidth > 700 && innerHeight > 400 ? menu_word_l : menu_word_s}`}>Projects</p>
+            </a>
+          </div>
+
+    </li> -->
 
 </nav>
-  
