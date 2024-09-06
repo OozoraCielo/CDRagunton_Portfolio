@@ -34,7 +34,7 @@ let subtext2_black_s = "pt-2 px-10 text-base text-black font-normal"
 
 //projects
 let project_box = "bg-gray-900 rounded-2xl  border border-light_blue_area"
-let project_divider ="mt-2 mx-10 border-dashed border-light_blue_area border"
+let project_divider = "mt-2 mx-10 border-dashed border-light_blue_area border"
 
 //margins, paddings, dividers
 let left_right_margins = "ml-[3%] mr-[15%]"
@@ -50,6 +50,10 @@ import {
 //get screen size
 $: innerWidth = 1000;
 $: innerHeight = 1000;
+
+//data
+import Project from "$lib/project_list.svelte"
+import Skills from "$lib/skill_list.svelte"
 </script>
 
 <svelte:window bind:innerWidth bind:innerHeight />
@@ -87,104 +91,8 @@ $: innerHeight = 1000;
 
             <div class={space2}></div>
 
-            <div class={`flex flex-row flex-wrap mx-auto w-[75%]`}>
+            <Skills></Skills>
 
-                <div class={skills_div}>
-                    <img src="skills/python_logo.png" alt="a" class={`${innerWidth > 700 ? skills_logo_l : skills_logo_s}`}>
-                    <h2 class={`${innerWidth > 700 ? skills_name_l : skills_name_s}`}>Python</h2>
-                </div>
-
-                <div class={skills_div}>
-                    <img src="skills/c_logo.png" alt="a" class={`${innerWidth > 700 ? skills_logo_l : skills_logo_s}`}>
-                    <h2 class={`${innerWidth > 700 ? skills_name_l : skills_name_s}`}>C</h2>
-                </div>
-
-                <div class={skills_div}>
-                    <img src="skills/csharp_logo.png" alt="a" class={`${innerWidth > 700 ? skills_logo_l : skills_logo_s}`}>
-                    <h2 class={`${innerWidth > 700 ? skills_name_l : skills_name_s}`}>C#</h2>
-                </div>
-
-                <div class={skills_div}>
-                    <img src="skills/typescript_logo.png" alt="a" class={`${innerWidth > 700 ? skills_logo_l : skills_logo_s}`}>
-                    <h2 class={`${innerWidth > 700 ? skills_name_l : skills_name_s}`}>Typescript</h2>
-                </div>
-
-                <div class={skills_div}>
-                    <img src="skills/html_logo.png" alt="a" class={`${innerWidth > 700 ? skills_logo_l : skills_logo_s}`}>
-                    <h2 class={`${innerWidth > 700 ? skills_name_l : skills_name_s}`}>HTML</h2>
-                </div>
-
-                <div class={skills_div}>
-                    <img src="skills/css_logo.png" alt="a" class={`${innerWidth > 700 ? skills_logo_l : skills_logo_s}`}>
-                    <h2 class={`${innerWidth > 700 ? skills_name_l : skills_name_s}`}>CSS</h2>
-                </div>
-
-                <div class={skills_div}>
-                    <img src="skills/javascript_logo.png" alt="a" class={`${innerWidth > 700 ? skills_logo_l : skills_logo_s}`}>
-                    <h2 class={`${innerWidth > 700 ? skills_name_l : skills_name_s}`}>Javascript</h2>
-                </div>
-
-                <div class={skills_div}>
-                    <img src="skills/linux_logo.png" alt="a" class={`${innerWidth > 700 ? skills_logo_l : skills_logo_s}`}>
-                    <h2 class={`${innerWidth > 700 ? skills_name_l : skills_name_s}`}>Linux</h2>
-                </div>
-
-                <div class={skills_div}>
-                    <img src="skills/figma_logo.png" alt="a" class={`${innerWidth > 700 ? skills_logo_l : skills_logo_s}`}>
-                    <h2 class={`${innerWidth > 700 ? skills_name_l : skills_name_s}`}>Figma</h2>
-                </div>
-
-                <div class={skills_div}>
-                    <img src="skills/svelte_logo.png" alt="a" class={`${innerWidth > 700 ? skills_logo_l : skills_logo_s}`}>
-                    <h2 class={`${innerWidth > 700 ? skills_name_l : skills_name_s}`}>Svelte</h2>
-                </div>
-
-                <div class={skills_div}>
-                    <img src="skills/tailwind_logo.png" alt="a" class={`${innerWidth > 700 ? skills_logo_l : skills_logo_s}`}>
-                    <h2 class={`${innerWidth > 700 ? skills_name_l : skills_name_s}`}>Tailwind</h2>
-                </div>
-
-                <div class={skills_div}>
-                    <img src="skills/matlab_logo.png" alt="a" class={`${innerWidth > 700 ? skills_logo_l : skills_logo_s}`}>
-                    <h2 class={`${innerWidth > 700 ? skills_name_l : skills_name_s}`}>Matlab</h2>
-                </div>
-
-                <div class={skills_div}>
-                    <img src="skills/flutter_logo.png" alt="a" class={`${innerWidth > 700 ? skills_logo_l : skills_logo_s}`}>
-                    <h2 class={`${innerWidth > 700 ? skills_name_l : skills_name_s}`}>Flutter</h2>
-                </div>
-
-                <div class={skills_div}>
-                    <img src="skills/firebase_logo.png" alt="a" class={`${innerWidth > 700 ? skills_logo_l : skills_logo_s}`}>
-                    <h2 class={`${innerWidth > 700 ? skills_name_l : skills_name_s}`}>Firebase</h2>
-                </div>
-
-                <div class={skills_div}>
-                    <img src="skills/postgresql_logo.png" alt="a" class={`${innerWidth > 700 ? skills_logo_l : skills_logo_s}`}>
-                    <h2 class={`${innerWidth > 700 ? skills_name_l : skills_name_s}`}>PostgreSQL</h2>
-                </div>
-
-                <div class={skills_div}>
-                    <img src="skills/godot_logo.png" alt="a" class={`${innerWidth > 700 ? skills_logo_l : skills_logo_s}`}>
-                    <h2 class={`${innerWidth > 700 ? skills_name_l : skills_name_s}`}>Godot</h2>
-                </div>
-
-                <div class={skills_div}>
-                    <img src="skills/unity_logo.png" alt="a" class={`${innerWidth > 700 ? skills_logo_l : skills_logo_s}`}>
-                    <h2 class={`${innerWidth > 700 ? skills_name_l : skills_name_s}`}>Unity</h2>
-                </div>
-
-                <div class={skills_div}>
-                    <img src="skills/github_logo.png" alt="a" class={`${innerWidth > 700 ? skills_logo_l : skills_logo_s}`}>
-                    <h2 class={`${innerWidth > 700 ? skills_name_l : skills_name_s}`}>Github</h2>
-                </div>
-
-                <div class={skills_div}>
-                    <img src="skills/git_logo.png" alt="a" class={`${innerWidth > 700 ? skills_logo_l : skills_logo_s}`}>
-                    <h2 class={`${innerWidth > 700 ? skills_name_l : skills_name_s}`}>Git</h2>
-                </div>
-
-            </div>
         </section>
 
     </div>
@@ -208,9 +116,9 @@ $: innerHeight = 1000;
 
                 <!--ncts-->
                 <div class=" ">
-                    
+
                     <div class={`${innerWidth > 700 ? 'flex flex-row' : 'flex flex-col'}` }>
-                        
+
                         <div class={`${innerWidth > 700 ? 'flex flex-col min-w-32' : 'flex flex-row min-w-32 mx-auto'}`}>
                             <img src="itslab.png" alt="a" class={`w-24 h-24 rounded-xl drop-shadow-xl`}>
                             <img src="ncts.png" alt="a" class={`w-24 h-24 rounded-xl drop-shadow-xl ${innerWidth > 700 ? '' : 'ml-5'}`}>
@@ -308,7 +216,6 @@ $: innerHeight = 1000;
                 <div class=" ">
                     <div class={`${innerWidth > 700 ? 'flex flex-row' : 'flex flex-col'}` }>
 
-
                         <div class={`flex flex-col min-w-32  ${innerWidth > 700 ? '' : 'mx-auto'}` }>
                             <img src="upd.png" alt="a" class="w-32 h-32 rounded-xl drop-shadow-xl">
                         </div>
@@ -385,183 +292,8 @@ $: innerHeight = 1000;
 
             <div class={space1}></div>
 
-            <!--JeePS-->
-            <div class={project_box}>
+            <Project></Project>
 
-                <div class={space2}></div>
-
-                <div class={`${innerWidth > 700 ? 'flex flex-row' : 'flex flex-col'}` }>
-
-                    <div class={`flex flex-col min-w-32  ${innerWidth > 700 ? '' : 'mx-auto'}` }>
-                        <img src="JeePS2.png" alt="a" class="ml-5 w-32 rounded-xl drop-shadow-xl">
-                    </div>
-                    <div>
-
-                        <h2 class={`${innerWidth > 700 ? heading_white_l : heading_white_s}`}>
-                            JeePS: Realtime Public Transportation Tracking System
-                        </h2>
-                        <h2 class={`${innerWidth > 700 ? subtext1_white_l : subtext1_white_s}`}>
-                            September 2023 - June 2024
-                        </h2>
-
-                        <div class={project_divider}></div>
-
-                        <h2 class={`${innerWidth > 700 ?subtext2_white_l : subtext2_white_s}`}>
-                            Published a paper about creating a web application and mobile application that improves the overall situation of public informal transportation in the Philippines. The system addresses problems of passengers regarding safety, driver’s behavior, information materials and service adequacy by providing several information using Flutter and Firebase.
-                        </h2>
-
-                    </div>
-                </div>
-                <div class={`mt-5 ${innerWidth > 700 ? 'flex flex-row' : 'flex flex-col'}`}>
-                    <img src="JeePS_jeep_selected.png" alt="a" class={`drop-shadow-xl mx-auto ${innerWidth > 700 ? 'w-[40%] rounded-xl' : 'w-[90%] rounded'}`}>
-                    <img src="JeePS_feedback.png" alt="a" class={`drop-shadow-xl mx-auto ${innerWidth > 700 ? 'w-[40%] rounded-xl' : 'w-[90%] rounded mt-5'}`}>
-                    <img src="JeePS_driver_app.png" alt="a" class={`drop-shadow-xl mx-auto ${innerWidth > 700 ? 'w-[10%] rounded-xl' : 'w-[30%] rounded mt-5'}`}>
-                </div>
-
-                <div class={space2}></div>
-
-            </div>
-
-            <!--space brfore next area-->
-            <div class={space1}></div>
-
-            <!--MeralCOST-->
-            <div class={project_box}>
-
-                <div class={space2}></div>
-
-                <div class={`${innerWidth > 700 ? 'flex flex-row' : 'flex flex-col'}` }>
-                    <div class={`flex flex-col min-w-32  ${innerWidth > 700 ? '' : 'mx-auto'}` }>
-                        <img src="meralcost.png" alt="a" class="ml-5 w-32 rounded-xl drop-shadow-xl">
-                    </div>
-                    <div>
-
-                        <h2 class={`${innerWidth > 700 ? heading_white_l : heading_white_s}`}>
-                            MeralCOST: Analysis on Meralco Typical Consumption Price
-                        </h2>
-                        <h2 class={`${innerWidth > 700 ? subtext1_white_l : subtext1_white_s}`}>
-                            March 2024 - June 2024
-                        </h2>
-
-                        <div class="mt-2 mx-10  border-dashed border-light_blue_area border "></div>
-                        <h2 class={`${innerWidth > 700 ?subtext2_white_l : subtext2_white_s}`}>
-                            Used Data Science to analyze and interpret data from past electric consumption costs of Meralco to determine how its price has changed over the years and what factors cause the price to fluctuate.		</h2>
-
-                    </div>
-                </div>
-                <div class={`mt-5 ${innerWidth > 700 ? 'flex flex-row' : 'flex flex-col'}`}>
-                    <img src="meralcost_homepage.png" alt="a" class={`drop-shadow-xl mx-auto ${innerWidth > 700 ? 'w-[50%] rounded-xl' : 'w-[90%] rounded'}`}>
-                    <img src="meralcost_plot1.png" alt="a" class={`drop-shadow-xl mx-auto ${innerWidth > 700 ? 'w-[40%] rounded-xl' : 'w-[90%] rounded mt-5'}`}>
-                </div>
-
-                <div class={space2}></div>
-
-            </div>
-
-            <!--space brfore next area-->
-            <div class={space1}></div>
-
-            <!--alco-ol-->
-            <div class={project_box}>
-
-                <div class={space2}></div>
-
-                <div class={`${innerWidth > 700 ? 'flex flex-row' : 'flex flex-col'}` }>
-                    <div class={`flex flex-col min-w-32  ${innerWidth > 700 ? '' : 'mx-auto'}` }>
-                        <img src="alco_ol.png" alt="a" class="ml-5 w-32 rounded-xl drop-shadow-xl">
-                    </div>
-                    <div>
-
-                        <h2 class={`${innerWidth > 700 ? heading_white_l : heading_white_s}`}>
-                            Alco-OL
-                        </h2>
-                        <h2 class={`${innerWidth > 700 ? subtext1_white_l : subtext1_white_s}`}>
-                            May 2023 - June 2023
-                        </h2>
-
-                        <div class={project_divider}></div>
-                        <h2 class={`${innerWidth > 700 ?subtext2_white_l : subtext2_white_s}`}>
-                            Developed a website that shows current level of content of sanitation dispensers using esp32 as well as their battery status through the internet using Svelte and Firebase		</h2>
-
-                    </div>
-
-                </div>
-
-                <div class={`mt-5 ${innerWidth > 700 ? 'flex flex-row' : 'flex flex-col'}`}>
-                    <img src="alco_ol_homepage .png" alt="a" class={`drop-shadow-xl mx-auto ${innerWidth > 700 ? 'w-[45%] rounded-xl' : 'w-[90%] rounded'}`}>
-                    <img src="alco_ol_map.png" alt="a" class={`drop-shadow-xl mx-auto ${innerWidth > 700 ? 'w-[45%] rounded-xl' : 'w-[90%] rounded mt-5'}`}>
-                </div>
-
-                <div class={space2}></div>
-
-            </div>
-
-            <!--space brfore next area-->
-            <div class={space1}></div>
-
-            <!--AI highest lowest game sales-->
-            <div class={project_box}>
-
-                <div class={space2}></div>
-
-                <div>
-                    <h2 class={`${innerWidth > 700 ? heading_white_l : heading_white_s} pt-0`}>
-                        Predicting Highest and lowest Region of game Sales using Decision Tree Classifier and other Models (AI)
-                    </h2>
-                    <h2 class={`${innerWidth > 700 ? subtext1_white_l : subtext1_white_s}`}>
-                        April 2024 - June 2024
-                    </h2>
-
-                    <div class={project_divider}></div>
-                    <h2 class={`${innerWidth > 700 ?subtext2_white_l : subtext2_white_s}`}>
-                        Used Decision Tree Classifier, Multilayer Perception Classifier, and Hist Gradient Bossting Classifier to predict which region has the highest and lowest scale for a video game. </h2>
-
-                </div>
-
-                <div class={`mt-5 ${innerWidth > 700 ? 'flex flex-row' : 'flex flex-col'}`}>
-                    <img src="ai_1.png" alt="a" class={`drop-shadow-xl mx-auto ${innerWidth > 700 ? 'w-[45%] rounded-xl' : 'w-[90%] rounded'}`}>
-                    <img src="ai_2.png" alt="a" class={`drop-shadow-xl mx-auto ${innerWidth > 700 ? 'w-[45%] rounded-xl' : 'w-[90%] rounded mt-5'}`}>
-                </div>
-
-                <div class={space2}></div>
-            </div>
-
-            <!--space brfore next area-->
-            <div class={space1}></div>
-
-            <!--JeePS old-->
-            <div class={project_box}>
-
-                <div class={space2}></div>
-
-                <div class={`${innerWidth > 700 ? 'flex flex-row' : 'flex flex-col'}` }>
-                    <div class={`flex flex-col min-w-32  ${innerWidth > 700 ? '' : 'mx-auto'}` }>
-                        <img src="JeePS_old.png" alt="a" class="ml-5 w-32 rounded-xl drop-shadow-xl">
-                    </div>
-                    <div>
-
-                        <h2 class={`${innerWidth > 700 ? heading_white_l : heading_white_s}`}>
-                            JeePS (old version)
-                        </h2>
-                        <h2 class={`${innerWidth > 700 ? subtext1_white_l : subtext1_white_s}`}>
-                            September 2022 - June 2023
-                        </h2>
-
-                        <div class={project_divider}></div>
-                        <h2 class={`${innerWidth > 700 ?subtext2_white_l : subtext2_white_s}`}>
-                            Developed a website that shows current level of content of sanitation dispensers using esp32 as well as their battery status through the internet using Svelte and Firebase		</h2>
-
-                    </div>
-
-                </div>
-                <div class={`mt-5 ${innerWidth > 700 ? 'flex flex-row' : 'flex flex-col'}`}>
-                    <img src="JeePS_old_homepage.png" alt="a" class={`drop-shadow-xl mx-auto ${innerWidth > 700 ? 'w-[45%] rounded-xl' : 'w-[90%] rounded'}`}>
-                    <img src="JeePS_old_login.png" alt="a" class={`drop-shadow-xl mx-auto ${innerWidth > 700 ? 'w-[45%] rounded-xl' : 'w-[90%] rounded mt-5'}`}>
-                </div>
-
-                <div class={space2}></div>
-
-            </div>
         </section>
 
     </div>

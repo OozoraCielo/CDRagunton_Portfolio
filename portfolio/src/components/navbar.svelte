@@ -6,9 +6,6 @@
 let menu_div_l = "bg-black bg-opacity-0 hover:bg-opacity-100  rounded-2xl pointer-events-auto px-3 text-2xl h-14"
 let menu_word_l = "text-white py-3"
 
-let menu_div_m = "bg-black bg-opacity-0 hover:bg-opacity-100  rounded-2xl pointer-events-auto px-2 text-xl h-10"
-let menu_word_m = "text-white py-1"
-
 let menu_div_s = "bg-black bg-opacity-0 hover:bg-opacity-100  rounded pointer-events-auto px-1 text-base h-8"
 let menu_word_s = "text-white py-1"
 
@@ -26,6 +23,7 @@ let options = [{
         word: "Home",
         link: "top"
     },
+
     {
         word: "Skills",
         link: "skills"
@@ -70,45 +68,5 @@ let options = [{
         </div>
         {/each}
     </li>
-
-    <!-- <li class={`flex justify-center`} >
-
-          <div class={`${innerWidth > 700 && innerHeight > 400 ? menu_div_l : menu_div_s}`}>
-            <a href use:scrollTo={{ ref: 'home', offset: -500 }} >
-            <p class={`${innerWidth > 700 && innerHeight > 400 ? menu_word_l : menu_word_s}`}>Home</p>
-            </a>
-          </div>
-
-          <div class={`${innerWidth > 700 && innerHeight > 400 ? menu_div_l : menu_div_s}`}>
-            <a href use:scrollTo={{ ref: 'skills', offset: -200 }}>
-            <p class={`${innerWidth > 700 && innerHeight > 400 ? menu_word_l : menu_word_s}`}>Skills</p>
-            </a>
-          </div>
-
-          <div class={`${innerWidth > 700 && innerHeight > 400 ? menu_div_l : menu_div_s}`}>
-            <a href use:scrollTo={{ ref: 'work', offset: -200 }}>
-            <p class={`${innerWidth > 700 && innerHeight > 400 ? menu_word_l : menu_word_s}`}>Work</p>
-            </a>
-          </div>
-
-          <div class={`${innerWidth > 700 && innerHeight > 400 ? menu_div_l : menu_div_s}`}>
-            <a href use:scrollTo={{ ref: 'publication', offset: -200 }}>
-            <p class={`${innerWidth > 700 && innerHeight > 400 ? menu_word_l : menu_word_s}`}>Publication</p>
-            </a>
-          </div>
-
-          <div class={`${innerWidth > 700 && innerHeight > 400 ? menu_div_l : menu_div_s}`}>
-            <a href use:scrollTo={{ ref: 'education', offset: -100 }}>
-            <p class={`${innerWidth > 700 && innerHeight > 400 ? menu_word_l : menu_word_s}`}>Education</p>
-            </a>
-          </div>
-
-          <div class={`${innerWidth > 700 && innerHeight > 400 ? menu_div_l : menu_div_s}`}>
-            <a href use:scrollTo={{ ref: 'projects', offset: -200 }}>
-            <p class={`${innerWidth > 700 && innerHeight > 400 ? menu_word_l : menu_word_s}`}>Projects</p>
-            </a>
-          </div>
-
-    </li> -->
 
 </nav>
