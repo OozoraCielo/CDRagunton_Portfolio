@@ -16,7 +16,7 @@ let subtext2_white_s = "pt-2 px-10 text-base text-gray-200 font-normal"
 
 
 //projects
-let project_box = "bg-gray-900 rounded-2xl  border border-light_blue_area"
+let project_box = "bg-black rounded-2xl  border border-light_blue_area bg-opacity-70"
 let project_divider = "mt-2 mx-10 border-dashed border-light_blue_area border"
 
 

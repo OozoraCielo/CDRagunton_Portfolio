@@ -2,7 +2,7 @@
 //tailwind css
 let skills_div = "flex flex-col mx-auto"
 
-let skills_logo_l = "drop-shadow-xl mt-10 w-12 mx-6 my-auto"
+let skills_logo_l = "drop-shadow-xl mt-10 w-12 mx-8 my-auto"
 let skills_name_l = "text-2xl text-gray-200 font-odibee mx-auto mt-auto"
 
 let skills_logo_s = "drop-shadow-xl mt-10 w-10 mx-4 my-auto"

@@ -3,12 +3,6 @@
 let quick_links_l = "w-10 transform transition duration-200 hover:scale-125 m-2"
 let quick_links_s = "w-7 transform transition duration-200 hover:scale-125 m-1"
 
-let menu_div_l = "bg-black bg-opacity-0 hover:bg-opacity-100  rounded-2xl pointer-events-auto px-3 text-2xl h-14"
-let menu_word_l = "text-white py-3"
-
-let menu_div_s = "bg-black bg-opacity-0 hover:bg-opacity-100  rounded pointer-events-auto px-1 text-base h-8"
-let menu_word_s = "text-white py-1"
-
 //get screen size
 $: innerWidth = 1000;
 $: innerHeight = 1000;
@@ -26,9 +20,9 @@ function doMail() {
 
 <div class={` min-w-full pointer-events-none select-none touch-none`}>
 
-    <div class="min-w-full min-h-full fixed justify-end flex flex-col">
+    <!-- <div class="min-w-full min-h-full fixed justify-end flex flex-col">
         <img src="bottom_shadow.png" alt="a" class="w-[100%] fixed mt-auto opacity-100">
-    </div>
+    </div> -->
 
     <div class="min-h-full min-w-full fixed">
         <img src="top_left.png" alt="a" class="mt-auto w-[20%]">
@@ -37,6 +31,8 @@ function doMail() {
     <div class="min-h-full min-w-full fixed flex justify-end">
         <img src="right.png" alt="a" class="w-[15%] min-h-[50%] -mt-44">
     </div>
+
+    
 
     <!-- <div class={`bg-black ${height} w-[200%] rotate-[-20deg] -ml-[20%] -mt-[48%]`}>
     </div> -->
@@ -70,3 +66,4 @@ function doMail() {
     </div>
 
 </div>
+

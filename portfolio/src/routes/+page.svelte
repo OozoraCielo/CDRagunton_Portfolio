@@ -58,25 +58,30 @@ import Skills from "$lib/skill_list.svelte"
 
 <svelte:window bind:innerWidth bind:innerHeight />
 
-<main class={`min-h-full min-w-full`}>
+<body class={`min-h-full min-w-full`}>
     <section use:scrollRef={'top'} class={`h-full`}></section>
     <!--Home-->
     <div>
         <section use:scrollRef={'home'} class={left_right_margins}>
-            <div class={`${innerHeight > 700 ? 'py-[350px]' : 'py-[225px]'}`}>
+            <div class ={`flex ${innerWidth > 800 ? 'py-[30%] flex-row' : 'py-[40%] flex-col'}`}>
+                <div class={`${innerWidth > 800 ? 'ml-auto' : 'mx-auto'}`}>
 
-                <h2 class={`text-gray-200 font-odibee flex justify-center text-center ${innerWidth > 700 ? 'text-7xl' : 'text-5xl'}`}>
-                    CD Ragunton
-                </h2>
+                    <h2 class={`text-gray-200 font-odibee flex justify-center text-center ${innerWidth > 800 ? 'text-7xl' : 'text-5xl'}`}>
+                        CD Ragunton
+                    </h2>
 
-                <h2 class={`text-gray-400 flex justify-center font-electrolize text-center ${innerWidth > 700 ? 'text-2xl pt-4' : 'text-base pt-2'}`}>
-                    Frontend/UI/UX Developer, Software Engineer
-                </h2>
+                    <h2 class={`text-gray-400 flex justify-center font-electrolize text-center ${innerWidth > 800 ? 'text-2xl pt-4' : 'text-base pt-2'}`}>
+                        Frontend/UI/UX Developer, Software Engineer
+                    </h2>
 
-                <!--space brfore next area-->
-                <div class={space1}></div>
-
+                </div>
+                <div class={`${innerWidth > 800 ? '-mt-[150px] mr-auto' : 'mx-auto'} `}>
+                    <img src="chibi_hello.gif" alt="a" class={`h-[300px] pointer-events-none select-none touch-none`}>
+                </div>
             </div>
+            <!--space brfore next area-->
+            <div class={space1}></div>
+
         </section>
     </div>
 
@@ -101,9 +106,9 @@ import Skills from "$lib/skill_list.svelte"
 
     <!--Work-->
     <div>
-        <img src="area_top.png" alt="a" class="w-screen pointer-events-none select-none touch-none">
+        <img src="area_top.png" alt="a" class="w-screen pointer-events-none select-none touch-none opacity-70">
 
-        <div class={`bg-light_blue_area w-screen`}>
+        <div class={`bg-light_blue_area w-screen bg-opacity-70`}>
             <section use:scrollRef={'work'} class={left_right_margins}>
 
                 <div class={space1}></div>
@@ -149,7 +154,7 @@ import Skills from "$lib/skill_list.svelte"
             </section>
         </div>
 
-        <img src="area_bottom.png" alt="a" class="w-screen pointer-events-none select-none touch-none">
+        <img src="area_bottom.png" alt="a" class="w-screen pointer-events-none select-none touch-none opacity-70">
 
     </div>
 
@@ -199,9 +204,9 @@ import Skills from "$lib/skill_list.svelte"
 
     <!--Education-->
     <div>
-        <img src="area_top.png" alt="a" class="w-screen pointer-events-none select-none touch-none">
+        <img src="area_top.png" alt="a" class="w-screen pointer-events-none select-none touch-none opacity-70">
 
-        <div class={`bg-light_blue_area w-screen`}>
+        <div class={`bg-light_blue_area w-screen bg-opacity-70`}>
 
             <section use:scrollRef={'education'} class={left_right_margins}>
 
@@ -278,7 +283,7 @@ import Skills from "$lib/skill_list.svelte"
 
         </div>
 
-        <img src="area_bottom.png" alt="a" class="w-screen pointer-events-none select-none touch-none">
+        <img src="area_bottom.png" alt="a" class="w-screen pointer-events-none select-none touch-none opacity-70">
     </div>
 
     <div class={space1}></div>
@@ -321,8 +326,10 @@ import Skills from "$lib/skill_list.svelte"
 
     <div class={space1}></div>
 
-</main>
+</body>
 
 <style>
-
+body {
+    overflow-x: hidden;
+}
 </style>
