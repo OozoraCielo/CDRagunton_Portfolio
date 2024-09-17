@@ -19,25 +19,26 @@ let area_title_black = "text-5xl text-black font-odibee flex justify-center text
 
 let heading_white_l = "px-10 text-3xl text-gray-200 font-electrolize my-auto"
 let heading_black_l = "px-10 text-3xl text-black font-electrolize my-auto"
-let heading_white_s = "px-10 pt-10 text-xl text-gray-200 font-electrolize my-auto"
-let heading_black_s = "px-10 pt-10 text-xl text-black font-electrolize my-auto"
+let heading_white_s = "px-10 pt-10 text-xl text-gray-200 font-electrolize my-auto text-center"
+let heading_black_s = "px-10 pt-10 text-xl text-black font-electrolize my-auto text-center"
 
 let subtext1_white_l = "pt-2 px-10 text-xl text-gray-200 font-electrolize"
 let subtext1_black_l = "pt-2 px-10 text-xl text-black font-electrolize"
-let subtext1_white_s = "pt-2 px-10 text-base text-gray-200 font-electrolize"
-let subtext1_black_s = "pt-2 px-10 text-base text-black font-electrolize"
+let subtext1_white_s = "pt-2 px-10 text-sm text-gray-200 font-electrolize text-center"
+let subtext1_black_s = "pt-2 px-10 text-sm text-black font-electrolize text-center"
 
 let subtext2_white_l = "pt-2 px-10 text-xl text-gray-200 font-normal"
 let subtext2_black_l = "pt-2 px-10 text-xl text-black font-normal"
-let subtext2_white_s = "pt-2 px-10 text-base text-gray-200 font-normal"
-let subtext2_black_s = "pt-2 px-10 text-base text-black font-normal"
+let subtext2_white_s = "pt-2 px-10 text-sm text-gray-200 font-normal text-center"
+let subtext2_black_s = "pt-2 px-10 text-sm text-black font-normal text-center"
 
 //projects
 let project_box = "bg-gray-900 rounded-2xl  border border-light_blue_area"
 let project_divider = "mt-2 mx-10 border-dashed border-light_blue_area border"
 
 //margins, paddings, dividers
-let left_right_margins = "ml-[3%] mr-[15%]"
+let left_right_margins_l = "ml-[3%] mr-[15%]"
+let left_right_margins_s = "ml-[4%] mr-[4%]"
 let divider_light = "mt-2 mx-10 border-dashed border-light_blue_area border"
 let divider_dark = "mt-2 mx-10 border-dashed border-blue_bg border"
 
@@ -62,21 +63,27 @@ import Skills from "$lib/skill_list.svelte"
     <section use:scrollRef={'top'} class={`h-full`}></section>
     <!--Home-->
     <div>
-        <section use:scrollRef={'home'} class={left_right_margins}>
-            <div class ={`flex ${innerWidth > 800 ? 'py-[30%] flex-row' : 'py-[40%] flex-col'}`}>
-                <div class={`${innerWidth > 800 ? 'ml-auto' : 'mx-auto'}`}>
+        <section use:scrollRef={'home'} class={`${innerWidth > 700 ? left_right_margins_l : left_right_margins_s}`}>
+            <div class ={`flex ${innerWidth > 700 ? 'py-[28%] flex-row' : 'py-[25%] flex-col'}`}>
 
-                    <h2 class={`text-gray-200 font-odibee flex justify-center text-center ${innerWidth > 800 ? 'text-7xl' : 'text-5xl'}`}>
-                        CD Ragunton
+                <div class={`${innerWidth > 700 ? '-mt-[30px] ml-auto' : 'mx-auto'} `}>
+                    <img src="cdbr_logo.png" alt="a" class={`rounded-xl drop-shadow-xl ${innerWidth > 700 ? 'w-44' : 'w-32'} pointer-events-none select-none touch-none`}>
+                </div>
+
+                <div class={`${innerWidth > 700 ? 'ml-10' : 'mt-7'}`}>
+
+                    <h2 class={`text-gray-200 font-odibee flex justify-center text-center ${innerWidth > 700 ? 'text-7xl' : 'text-5xl'}`}>
+                        CD  Ragunton
                     </h2>
 
-                    <h2 class={`text-gray-400 flex justify-center font-electrolize text-center ${innerWidth > 800 ? 'text-2xl pt-4' : 'text-base pt-2'}`}>
+                    <h2 class={`text-gray-400 flex justify-center font-electrolize text-center ${innerWidth > 700 ? 'text-2xl pt-4' : 'text-base pt-2'}`}>
                         Frontend/UI/UX Developer, Software Engineer
                     </h2>
 
                 </div>
-                <div class={`${innerWidth > 800 ? '-mt-[150px] mr-auto' : 'mx-auto'} `}>
-                    <img src="chibi_hello.gif" alt="a" class={`h-[300px] pointer-events-none select-none touch-none`}>
+
+                <div class={`${innerWidth > 700 ? '-mt-[125px] mr-auto' : 'mx-auto'} `}>
+                    <img src="chibi_hello.gif" alt="a" class={`${innerWidth > 700 ? 'h-[300px]' : 'h-[250px]'}  pointer-events-none select-none touch-none`}>
                 </div>
             </div>
             <!--space brfore next area-->
@@ -89,7 +96,7 @@ import Skills from "$lib/skill_list.svelte"
 
     <!--Skills-->
     <div>
-        <section use:scrollRef={'skills'} class={left_right_margins}>
+        <section use:scrollRef={'skills'} class={`${innerWidth > 700 ? left_right_margins_l : left_right_margins_s}`}>
             <h2 class={area_title_white}>
                 Skills
             </h2>
@@ -106,10 +113,10 @@ import Skills from "$lib/skill_list.svelte"
 
     <!--Work-->
     <div>
-        <img src="area_top.png" alt="a" class="w-screen pointer-events-none select-none touch-none opacity-70">
+        <img src="area_top.png" alt="a" class="w-screen pointer-events-none select-none touch-none opacity-60">
 
-        <div class={`bg-light_blue_area w-screen bg-opacity-70`}>
-            <section use:scrollRef={'work'} class={left_right_margins}>
+        <div class={`bg-light_blue_area w-screen bg-opacity-60`}>
+            <section use:scrollRef={'work'} class={`${innerWidth > 700 ? left_right_margins_l : left_right_margins_s}`}>
 
                 <div class={space1}></div>
 
@@ -125,8 +132,8 @@ import Skills from "$lib/skill_list.svelte"
                     <div class={`${innerWidth > 700 ? 'flex flex-row' : 'flex flex-col'}` }>
 
                         <div class={`${innerWidth > 700 ? 'flex flex-col min-w-32' : 'flex flex-row min-w-32 mx-auto'}`}>
-                            <img src="itslab.png" alt="a" class={`w-24 h-24 rounded-xl drop-shadow-xl`}>
-                            <img src="ncts.png" alt="a" class={`w-24 h-24 rounded-xl drop-shadow-xl ${innerWidth > 700 ? '' : 'ml-5'}`}>
+                            <img src="itslab.png" alt="a" class={`rounded-xl drop-shadow-xl ${innerWidth > 700 ? 'w-24 h-24' : 'w-20 h-20'}`}>
+                            <img src="ncts.png" alt="a" class={`rounded-xl drop-shadow-xl ${innerWidth > 700 ? 'w-24 h-24' : 'ml-5 w-20 h-20'}`}>
                         </div>
 
                         <div>
@@ -142,7 +149,7 @@ import Skills from "$lib/skill_list.svelte"
                             <div class={divider_dark}></div>
 
                             <h2 class={`${innerWidth > 700 ?subtext2_black_l : subtext2_black_s}`}>
-                                Worked as an intern and developed the frontend of CREATE: CIVIR, a project that replicates a real-life car-related accident, using Unity.
+                                Worked as an intern and developed the frontend of CREATE: CIVIR, a government project that replicates a real-life car-related accident, using Unity.
                             </h2>
                         </div>
 
@@ -154,7 +161,7 @@ import Skills from "$lib/skill_list.svelte"
             </section>
         </div>
 
-        <img src="area_bottom.png" alt="a" class="w-screen pointer-events-none select-none touch-none opacity-70">
+        <img src="area_bottom.png" alt="a" class="w-screen pointer-events-none select-none touch-none opacity-60">
 
     </div>
 
@@ -162,7 +169,7 @@ import Skills from "$lib/skill_list.svelte"
 
     <!--Publication-->
     <div>
-        <section use:scrollRef={'publication'} class={left_right_margins}>
+        <section use:scrollRef={'publication'} class={`${innerWidth > 700 ? left_right_margins_l : left_right_margins_s}`}>
             <h2 class={area_title_white}>
                 Publication
             </h2>
@@ -173,8 +180,8 @@ import Skills from "$lib/skill_list.svelte"
             <div class=" ">
                 <div class={`${innerWidth > 700 ? 'flex flex-row' : 'flex flex-col'}` }>
 
-                    <div class={`flex flex-col min-w-32  ${innerWidth > 700 ? '' : 'mx-auto'}` }>
-                        <img src="jeeps.png" alt="a" class="w-32 rounded-xl drop-shadow-xl">
+                    <div class={`flex flex-col ${innerWidth > 700 ? '' : 'mx-auto'}` }>
+                        <img src="jeeps.png" alt="a" class={`rounded-xl drop-shadow-xl ${innerWidth > 700 ? 'w-72' : 'w-24'}`}>
                     </div>
                     <div>
 
@@ -190,7 +197,7 @@ import Skills from "$lib/skill_list.svelte"
                         <div class={divider_light}></div>
 
                         <h2 class={`${innerWidth > 700 ?subtext2_white_l : subtext2_white_s}`}>
-                            Published a paper about creating a web application and mobile application that improves the overall situation of public informal transportation in the Philippines. The system addresses problems of passengers regarding safety, driver’s behavior, information materials and service adequacy by providing several information using Flutter and Firebase.
+                            Published a paper and presented in the NIDS 2024 conference about creating a web application and mobile application that improves the overall situation of public informal transportation in the Philippines. The system addresses problems of passengers regarding safety, driver’s behavior, information materials and service adequacy by providing several information using Flutter and Firebase. The results of the paper shows a visible increase in passengers' satisfaction upon using the JeePS system.
                         </h2>
 
                     </div>
@@ -204,11 +211,11 @@ import Skills from "$lib/skill_list.svelte"
 
     <!--Education-->
     <div>
-        <img src="area_top.png" alt="a" class="w-screen pointer-events-none select-none touch-none opacity-70">
+        <img src="area_top.png" alt="a" class="w-screen pointer-events-none select-none touch-none opacity-60">
 
-        <div class={`bg-light_blue_area w-screen bg-opacity-70`}>
+        <div class={`bg-light_blue_area w-screen bg-opacity-60`}>
 
-            <section use:scrollRef={'education'} class={left_right_margins}>
+            <section use:scrollRef={'education'} class={`${innerWidth > 700 ? left_right_margins_l : left_right_margins_s}`}>
 
                 <div class={space1}></div>
                 <h2 class={area_title_black}>
@@ -221,8 +228,8 @@ import Skills from "$lib/skill_list.svelte"
                 <div class=" ">
                     <div class={`${innerWidth > 700 ? 'flex flex-row' : 'flex flex-col'}` }>
 
-                        <div class={`flex flex-col min-w-32  ${innerWidth > 700 ? '' : 'mx-auto'}` }>
-                            <img src="upd.png" alt="a" class="w-32 h-32 rounded-xl drop-shadow-xl">
+                        <div class={`flex flex-col ${innerWidth > 700 ? '' : 'mx-auto'}` }>
+                            <img src="upd.png" alt="a" class={`rounded-xl drop-shadow-xl ${innerWidth > 700 ? 'w-32' : 'w-24'}`}>
                         </div>
                         <div>
 
@@ -249,13 +256,14 @@ import Skills from "$lib/skill_list.svelte"
                 </div>
 
                 <div class={space1}></div>
+                <div class={space1}></div>
 
                 <!--sha-->
                 <div class=" ">
                     <div class={`${innerWidth > 700 ? 'flex flex-row' : 'flex flex-col'}` }>
 
-                        <div class={`flex flex-col min-w-32  ${innerWidth > 700 ? '' : 'mx-auto'}` }>
-                            <img src="sha.png" alt="a" class="w-32 h-32 rounded-xl drop-shadow-xl">
+                        <div class={`flex flex-col ${innerWidth > 700 ? '' : 'mx-auto'}` }>
+                            <img src="sha.png" alt="a" class={`rounded-xl drop-shadow-xl ${innerWidth > 700 ? 'w-32' : 'w-24'}`}>
                         </div>
 
                         <div>
@@ -283,14 +291,14 @@ import Skills from "$lib/skill_list.svelte"
 
         </div>
 
-        <img src="area_bottom.png" alt="a" class="w-screen pointer-events-none select-none touch-none opacity-70">
+        <img src="area_bottom.png" alt="a" class="w-screen pointer-events-none select-none touch-none opacity-60">
     </div>
 
     <div class={space1}></div>
 
     <!--Projects-->
     <div>
-        <section use:scrollRef={'projects'} class={left_right_margins}>
+        <section use:scrollRef={'projects'} class={`${innerWidth > 700 ? left_right_margins_l : left_right_margins_s}`}>
             <h2 class={area_title_white}>
                 Projects
             </h2>
@@ -310,7 +318,7 @@ import Skills from "$lib/skill_list.svelte"
 
     <!--end-->
     <div>
-        <section class={left_right_margins}>
+        <section class={`${innerWidth > 700 ? left_right_margins_l : left_right_margins_s}`}>
 
             <div class={`flex flex-col `}>
 
@@ -324,6 +332,7 @@ import Skills from "$lib/skill_list.svelte"
         </section>
     </div>
 
+    <div class={space1}></div>
     <div class={space1}></div>
 
 </body>

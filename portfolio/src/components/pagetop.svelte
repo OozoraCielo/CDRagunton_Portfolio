@@ -18,7 +18,7 @@ function doMail() {
 <!-- <div class={`bg-black h-[400px] w-[2000px] z-30 fixed rotate-[-20deg]`}>
 </div> -->
 
-<div class={` min-w-full pointer-events-none select-none touch-none`}>
+<div class={`min-h-full min-w-full pointer-events-none select-none touch-none`}>
 
     <!-- <div class="min-w-full min-h-full fixed justify-end flex flex-col">
         <img src="bottom_shadow.png" alt="a" class="w-[100%] fixed mt-auto opacity-100">
@@ -27,12 +27,6 @@ function doMail() {
     <div class="min-h-full min-w-full fixed">
         <img src="top_left.png" alt="a" class="mt-auto w-[20%]">
     </div>
-
-    <div class="min-h-full min-w-full fixed flex justify-end">
-        <img src="right.png" alt="a" class="w-[15%] min-h-[50%] -mt-44">
-    </div>
-
-    
 
     <!-- <div class={`bg-black ${height} w-[200%] rotate-[-20deg] -ml-[20%] -mt-[48%]`}>
     </div> -->
@@ -45,25 +39,44 @@ function doMail() {
 
 </div>
 
-<!--links-->
+
 <div class={`min-w-full min-h-full flex flex-col fixed justify-end pointer-events-none `}>
-    <div class="ml-auto" >
+    {#if innerWidth > 700}
+    <div class="min-h-full min-w-full fixed flex justify-end">
+        <img src="right.png" alt="a" class="w-[15%] min-h-[50%] -mt-44">
+    </div>
+    {:else}
+    <div class="">
+        <img src="bot.png" alt="a" class="w-full h-20">
+    </div>
+    {/if}
+
+</div>
+
+<!--links-->
+<div class={`min-w-full min-h-full flex fixed justify-end pointer-events-none ${innerWidth > 700 ? 'flex-col' : 'flex-row'}`}>
+
+    
+    <div class={`${innerWidth > 700 ? 'ml-auto' : 'mt-auto mb-2'}`}>
         <a href="mailto:raguntoncarl@gmail.com" class={`pointer-events-auto`}>
             <img src="mail.png" alt="a" class={`${innerWidth > 700 ? quick_links_l : quick_links_s}`}>
         </a>
     </div>
 
-    <div class="ml-auto">
+    <div class={`${innerWidth > 700 ? 'ml-auto' : 'mt-auto mb-2'}`}>
         <a href="https://www.linkedin.com/in/cdragunton/" class={`pointer-events-auto`} >
             <img src="linkedin_logo.png" alt="a" class={`${innerWidth > 700 ? quick_links_l : quick_links_s}`}>
         </a>
     </div>
 
-    <div class="ml-auto">
+    <div class={`${innerWidth > 700 ? 'ml-auto' : 'mt-auto mb-2'}`}>
         <a href="https://github.com/OozoraCielo" class={`pointer-events-auto`}>
             <img src="github_logo.png" alt="a" class={`${innerWidth > 700 ? quick_links_l : quick_links_s}`}>
         </a>
     </div>
 
 </div>
+
+
+
 

@@ -26,7 +26,7 @@ export default {
         spin1: "shaper 10s linear infinite",
         spin2: "shaper 20s linear infinite",
         spin3: "shaper 30s linear infinite",
-        spin4: "shaper 100s linear infinite",
+        spin4: "shaper 115s linear infinite",
         spin5: "shaper 110s linear infinite",
         spin6: "shaper 120s linear infinite",
       },
