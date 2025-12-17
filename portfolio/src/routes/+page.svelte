@@ -77,7 +77,7 @@ import Skills from "$lib/skill_list.svelte"
                     </h2>
 
                     <h2 class={`text-gray-400 flex justify-center font-electrolize text-center ${innerWidth > 700 ? 'text-2xl pt-4' : 'text-base pt-2'}`}>
-                        Frontend/UI/UX Developer, Software Engineer
+                        Android Developer, Frontend and UI/UX Developer
                     </h2>
 
                 </div>
@@ -124,6 +124,40 @@ import Skills from "$lib/skill_list.svelte"
                     Work Experience
                 </h2>
 
+                <div class={space1}></div>
+
+                <!--UBX-->
+                <div class=" ">
+
+                    <div class={`${innerWidth > 700 ? 'flex flex-row' : 'flex flex-col'}` }>
+
+                        <div class={`flex flex-col ${innerWidth > 700 ? '' : 'mx-auto'}` }>
+                            <img src="ubx_logo.jpg" alt="a" class={`rounded-xl drop-shadow-xl ${innerWidth > 700 ? 'w-32' : 'w-24'}`}>
+                        </div>
+
+                        <div>
+                            <h2 class={`${innerWidth > 700 ? heading_black_l : heading_black_s}`}>
+                                UBX
+                            </h2>
+
+                            <h2 class={`${innerWidth > 700 ? subtext1_black_l : subtext1_black_s}`}>
+                                <b>Junior Software Engineer</b> <br>
+                                January 2025 – Current <br>
+                                Pasig City, NCR
+                            </h2>
+
+                            <div class={divider_dark}></div>
+
+                            <h2 class={`${innerWidth > 700 ?subtext2_black_l : subtext2_black_s}`}>
+                                Worked on several financial applications and systems while learning new skillsets.
+                            </h2>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class={space1}></div>
                 <div class={space1}></div>
 
                 <!--ncts-->
@@ -181,7 +215,7 @@ import Skills from "$lib/skill_list.svelte"
                 <div class={`${innerWidth > 700 ? 'flex flex-row' : 'flex flex-col'}` }>
 
                     <div class={`flex flex-col ${innerWidth > 700 ? '' : 'mx-auto'}` }>
-                        <img src="jeeps.png" alt="a" class={`rounded-xl drop-shadow-xl ${innerWidth > 700 ? 'w-72' : 'w-24'}`}>
+                        <img src="jeeps.png" alt="a" class={`rounded-xl drop-shadow-xl ${innerWidth > 700 ? 'w-[400px]' : 'w-24'}`}>
                     </div>
                     <div>
 

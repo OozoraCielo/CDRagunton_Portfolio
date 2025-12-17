@@ -19,7 +19,52 @@ let project_box = "bg-black rounded-2xl  border border-light_blue_area bg-opacit
 let project_divider = "mt-2 mx-5 border-dashed border-light_blue_area border"
 
 //project data
-let project_data = [{
+let project_data = [
+        {
+        name: "Perahub Android Application",
+        logo_link: "perahub_logo.png",
+        date: "June 2025 - September 2025 (UBX)",
+        details: "Used Kotlin to develop a financial service application. Engineered migration interface for the entire user base within 1 month. Refactored over 600 files to comply with Google Play's Api level requirement. Architected new financial features like QR payment and provided maintenance and support on existing features of the application.",
+        pics: [
+        ],
+        link: "https://play.google.com/store/apps/details?id=com.yondu.cbcs.perahub&hl=en",
+        skills: ["Fintech App", "Kotlin", "Android Development"],
+        },    
+
+        {
+        name: "Orbit",
+        logo_link: "",
+        date: "November 2025 - Ongoing (UBX)",
+        details: "Used React to develop the integration between Orbit, an insurance workflow management system, and inlife. Developing a seamless frontend bridge between the two systems to pass and display critical data points to maintain workflow continuity.",
+        pics: [
+        ],
+        link: "",
+        skills: ["Fintech App", "React", "Web App"],
+        },   
+
+        {
+        name: "PETNET DRP",
+        logo_link: "petnet_drp_logo.png",
+        date: "February 2025 - May 2025 (UBX)",
+        details: "Supported and maintained a digital remittance platform and added new financial partners to its system using Golang. The system provides Api keys to PETNET's partners for them to securely use the entity's Api's.",
+        pics: [
+        ],
+        link: "",
+        skills: ["Fintech App", "Golang", "Web App"],
+        },   
+
+        {
+        name: "Sta. Cruz Phase 2 Migration",
+        logo_link: "",
+        date: "November 2025 - Ongoing (UBX)",
+        details: "Migrating thousands of Land Titles and Tax Declarations to the Sta. Cruz system using Python and PostgreSQL.",
+        pics: [
+        ],
+        link: "",
+        skills: ["Fintech App", "Python", "PostgreSQL"],
+        },   
+
+        {
         name: "JeePS: Realtime Public Transportation Tracking System",
         logo_link: "JeePS2.png",
         date: "September 2023 - June 2024",
@@ -165,18 +210,20 @@ $: innerHeight = 1000;
             {/each}
         </div>
 
+        {#if proj.link != ""}
         <div class={space2}></div>
 
         <div class={`flex flex-row`}>
-            {#if proj.link != ""}
+            
             <div class={`ml-auto w-12 h-10 border border-light_blue_area rounded-xl mr-5 hover:bg-gray-800`}>
                 <a href={proj.link} target="_blank">
                     <img src="open_in_new_tab.png" alt="a" class="w-6 mx-auto py-2">
                 </a>
             </div>
-            {/if}
+            
 
         </div>
+        {/if}
         <div class={`pt-5`}></div>
 
         

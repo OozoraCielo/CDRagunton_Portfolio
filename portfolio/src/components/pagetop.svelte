@@ -46,7 +46,7 @@ function doMail() {
         <img src="right.png" alt="a" class="w-[15%] min-h-[50%] -mt-44">
     </div>
     {:else}
-    <div class="">
+    <div class="min-w-full fixed flex justify-end">
         <img src="bot.png" alt="a" class="w-full h-20">
     </div>
     {/if}
