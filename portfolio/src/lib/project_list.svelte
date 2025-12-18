@@ -56,7 +56,7 @@ let project_data = [
         {
         name: "Sta. Cruz Phase 2 Migration",
         logo_link: "",
-        date: "November 2025 - Ongoing (UBX)",
+        date: "September 2025 - Ongoing (UBX)",
         details: "Migrating thousands of Land Titles and Tax Declarations to the Sta. Cruz system using Python and PostgreSQL.",
         pics: [
         ],
